@@ -22,4 +22,4 @@ clean:
 # Run the development environment (install, run, and watch for changes)
 dev:
     just install
-    just run
+    pip install -e .

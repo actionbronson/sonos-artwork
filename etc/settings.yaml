@@ -1,7 +1,12 @@
+# You need a running backend of the Sonos HTTP API, such as https://github.com/jishi/node-sonos-http-api
 endpoint: http://jupiter:5005/
+
+# HyperPixel 4.0 Square 
 display:
   height: 720
   width: 720
+
+# Sonos Zones we're controlling
 zones:
   - name: Kitchen
     hostname: SonosKitchen.local
