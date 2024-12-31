@@ -4,7 +4,7 @@
 install:
     python -m build .
 
-publish: install
+publish: clean install
 	twine check dist/*
 	twine upload dist/*
 
@@ -21,7 +21,8 @@ check:
 
 # Clean up generated files
 clean:
-    rm -rf **/__pycache__ .pytest_cache
+    rm -rf **/__pycache__ .pytest_cache dist build
+
 
 # Run the development environment (install, run, and watch for changes)
 dev:

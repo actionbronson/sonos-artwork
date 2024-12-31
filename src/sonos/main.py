@@ -77,6 +77,9 @@ def flet_app_updater(config_file: str | None = None) -> Callable[..., None]:
                             logger.warning("Artwork hasn't changed...")
                             return
                         page.controls.remove(control)
+            icon_height = config['display']['height']/2
+            icon_width=config['display']['width']/2
+            icon_size=config['display']['height']/4
             container = flt.Container(
                 image=flt.DecorationImage(
                     src=artwork,
@@ -91,10 +94,13 @@ def flet_app_updater(config_file: str | None = None) -> Callable[..., None]:
                             icon=flt.Icons.VOLUME_DOWN_ROUNDED,
                             on_click=generate_volume_action(-1),
                             selected=False,
+                            height=icon_height,
+                            width=icon_width,
+                            icon_size=icon_size,
                             style=flt.ButtonStyle(
                                 color={
                                     "selected": flt.Colors.GREEN,
-                                    "": flt.Colors.WHITE,
+                                    "": flt.Colors.TRANSPARENT,
                                 }
                             ),
                         ),
@@ -102,10 +108,13 @@ def flet_app_updater(config_file: str | None = None) -> Callable[..., None]:
                             icon=flt.Icons.VOLUME_UP_ROUNDED,
                             on_click=generate_volume_action(1),
                             selected=False,
+                            height=icon_height,
+                            width=icon_width,
+                            icon_size=icon_size,
                             style=flt.ButtonStyle(
                                 color={
                                     "selected": flt.Colors.GREEN,
-                                    "": flt.Colors.WHITE,
+                                    "": flt.Colors.TRANSPARENT,
                                 }
                             ),
                         ),
