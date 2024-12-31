@@ -18,7 +18,7 @@ requirements = [
 
 setup(
     name="sonos-artwork",
-    version="1.0.1",
+    version="1.1.0",
     description="Displays Sonos Artwork playing in a zone",
     long_description=long_description,
     long_description_content_type="text/markdown",
