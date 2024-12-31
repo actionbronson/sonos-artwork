@@ -17,24 +17,15 @@ requirements = [
 ]
 
 setup(
-    name="sonos-artwork",  # Required
-    version="1.0.0",  # Required
-    description="Displays Sonos Artwork playing in a zone",  # Optional
-    long_description=long_description,  # Optional
-    long_description_content_type="text/markdown",  # Optional (see note above)
-    url="https://github.com/pypa/sampleproject",  # Optional
-    author="Philippe Legault",  # Optional
-    classifiers=[  # Optional
-        # How mature is this project? Common values are
-        #   3 - Alpha
-        #   4 - Beta
-        #   5 - Production/Stable
+    name="sonos-artwork",
+    version="1.0.1",
+    description="Displays Sonos Artwork playing in a zone",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/actionbronson/sonos-artwork",
+    author="Philippe Legault",
+    classifiers=[
         "Development Status :: 3 - Alpha",
-        "Intended Audience :: Developers",
-        "Topic :: Software Development :: Build Tools",
-        # Specify the Python versions you support here. In particular, ensure
-        # that you indicate you support Python 3. These classifiers are *not*
-        # checked by 'pip install'. See instead 'python_requires' below.
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
@@ -51,7 +42,7 @@ setup(
     python_requires=">=3.10, <4",
     install_requires=requirements,
     extras_require={
-        "dev": ["pytest", "black", "ruff"],
+        "dev": ["pytest", "black", "ruff", "twine"],
     },
     include_package_data=True,
     entry_points={
