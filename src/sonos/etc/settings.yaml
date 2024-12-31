@@ -9,6 +9,6 @@ display:
 # Sonos Zones we're controlling
 zones:
   - name: Kitchen
-    hostname: SonosKitchen.local
+    hostname: SonosKitchen
   - name: Dining Room
-    hostname: SonosDining.local
+    hostname: SonosDining

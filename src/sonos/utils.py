@@ -34,6 +34,12 @@ def load_config(config_file: str | None = None) -> dict[str, Any] | None:
     return None
 
 
+def get_enabled_zone_names() -> set[str]:
+    config = load_config()
+    zone_names = [z['name'] for z in config.get('zones', [])]
+    return set(get_zone_details(zone_names).keys())
+
+
 def get_zone_names() -> set[str]:
     return set(get_zone_details().keys())
 
@@ -53,6 +59,23 @@ def get_zone_details(zones: list[str] | None = None) -> dict[str, Any]:
         for zone in zone_json["members"]
         if is_wanted_zone(zone["roomName"])
     }
+
+
+def change_volume(increment: int) -> bool:
+    config = load_config()
+    for zone in get_enabled_zone_names():
+        url_vol_increment: str = f"+{increment}" if increment > 0 else str(increment)
+        url = f"""{config['endpoint']}/{zone}/volume/{url_vol_increment}"""
+        logger.info(
+            "Volume in zone: '%s' changing by %d.  Url is '%s'", zone, increment, url
+        )
+        resp = requests.get(url, timeout=10)
+        resp.raise_for_status()
+        resp_json = resp.json()
+        if resp_json['status'] != 'success':
+            logger.error("Response was not a success.  Received: %s", resp_json)
+            return False
+    return True
 
 
 @functools.cache

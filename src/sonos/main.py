@@ -6,24 +6,31 @@ from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from collections.abc import Callable
 
-import functools
-import socket
+import time
 from urllib.parse import parse_qs, urlparse
 
 import flet as flt
 from flet_timer.flet_timer import Timer
 from typer import Typer
 
-from sonos.utils import get_zone_details, load_config
+from sonos.utils import change_volume, get_hostname, get_zone_details, load_config
 
 logger = logging.getLogger(__name__)
 
 app = Typer()
 
 
-@functools.cache
-def get_hostname(hostname: str) -> str:
-    return socket.gethostbyname(hostname)
+def generate_volume_action(increment: int):
+    def toggle_icon_button(e: flt.TapEvent) -> None:
+        control: flt.Control = e.control
+        control.selected = True
+        control.update()
+        time.sleep(0.2)
+        change_volume(increment)
+        control.selected = False
+        control.update()
+
+    return toggle_icon_button
 
 
 def guess_artwork(config: dict, current_track: dict) -> str | None:
@@ -66,16 +73,46 @@ def flet_app_updater(config_file: str | None = None) -> Callable[..., None]:
             if page.controls:
                 for control in page.controls:
                     if isinstance(control, flt.Container):
-                        if artwork is None or control.image_src == artwork:
+                        if artwork is None or control.image.src == artwork:
                             logger.warning("Artwork hasn't changed...")
                             return
                         page.controls.remove(control)
             container = flt.Container(
-                image_src=artwork,
-                image_fit=flt.ImageFit.COVER,
+                image=flt.DecorationImage(
+                    src=artwork,
+                    fit=flt.ImageFit.COVER,
+                ),
                 expand=True,
                 width=page.window.width,
                 height=page.window.height,
+                content=flt.Row(
+                    [
+                        flt.IconButton(
+                            icon=flt.Icons.VOLUME_DOWN_ROUNDED,
+                            on_click=generate_volume_action(-1),
+                            selected=False,
+                            style=flt.ButtonStyle(
+                                color={
+                                    "selected": flt.Colors.GREEN,
+                                    "": flt.Colors.WHITE,
+                                }
+                            ),
+                        ),
+                        flt.IconButton(
+                            icon=flt.Icons.VOLUME_UP_ROUNDED,
+                            on_click=generate_volume_action(1),
+                            selected=False,
+                            style=flt.ButtonStyle(
+                                color={
+                                    "selected": flt.Colors.GREEN,
+                                    "": flt.Colors.WHITE,
+                                }
+                            ),
+                        ),
+                    ],
+                    vertical_alignment=flt.CrossAxisAlignment.END,
+                    alignment=flt.MainAxisAlignment.SPACE_BETWEEN,
+                ),
             )
             page.add(container)
             page.update()
