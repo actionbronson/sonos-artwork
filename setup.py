@@ -18,8 +18,9 @@ requirements = [
 
 setup(
     name="sonos-artwork",
-    version="1.1.1",
-    description="Displays Sonos Artwork playing in a zone",
+    version="1.2.1",
+    description="Displays Sonos Artwork playing in a zone.  "
+    "Allows for basic playback controls.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/actionbronson/sonos-artwork",
