@@ -4,6 +4,10 @@
 install:
     python -m build .
 
+publish: install
+	twine check dist/*
+	twine upload dist/*
+
 # Run tests using Poetry and pytest
 test:
     pytest

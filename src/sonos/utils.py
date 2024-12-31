@@ -21,7 +21,7 @@ def load_config(config_file: str | None = None) -> dict[str, Any] | None:
     filename = (
         config_file
         if config_file
-        else Path(__file__).resolve().parents[2] / "etc" / "settings.yaml"
+        else Path(__file__).resolve().parent / "etc" / "settings.yaml"
     )
     logger.info("Loading config file from '%s'", filename)
     with open(filename) as stream:

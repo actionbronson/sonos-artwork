@@ -1,1 +1,1 @@
-include etc/settings.yaml
+include src/sonos/etc/settings.yaml
