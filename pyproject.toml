@@ -74,3 +74,32 @@ ignore = [
 
 [tool.ruff.format]
 quote-style = "preserve"
+
+[tool.ruff.lint.extend-per-file-ignores]
+"tests/**/*.py" = [
+    "S101", # asserts allowed in tests...
+    "ARG", # Unused function args -> fixtures nevertheless are functionally relevant...
+    "FBT", # Don't care about booleans as positional arguments in tests, e.g. via @pytest.mark.parametrize()
+    "PLR2004", # Magic value used in comparison, ...
+    "S311", # Standard pseudo-random generators are not suitable for cryptographic purposes
+]
+
+[tool.pytest.ini_options]
+pythonpath = "src"
+testpaths = ["tests"]
+filterwarnings = "error"
+xfail_strict = true
+addopts = "--cov=sonos --cov-report html --cov-report term --show-capture=all -s"
+
+[tool.coverage.run]
+source = ["src"]
+branch = true
+
+[tool.coverage.report]
+precision = 2
+exclude_lines = [
+    "pragma: no cover",
+    #"raise NotImplementedError",
+    "if TYPE_CHECKING:",
+    #"@overload",
+]

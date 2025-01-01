@@ -50,7 +50,6 @@ def get_zone_details(config: dict, zones: list[str] | None = None) -> dict[str, 
     def is_wanted_zone(zone: str) -> bool:
         return True if not zones else zone in zones
 
-    config = load_config()
     url = f"{config['endpoint']}/zones"
     resp = requests.get(url, timeout=10)
     resp.raise_for_status()
@@ -69,14 +68,14 @@ def get_status_info(config: dict) -> tuple:
     if zone_details:
         zone_data = next(iter(zone_details.values()))
         if 'currentTrack' in zone_data['state']:
-            artist, title, album = (
-                zone_data['state']['currentTrack'][x]
-                for x in ['artist', 'album', 'title']
+            artist, album, station_name, title = (
+                zone_data['state']['currentTrack'].get(x, None)
+                for x in ['artist', 'album', 'stationName', 'title']
             )
             logger.info(
                 "Retrieved artist: '%s', album: '%s', title: '%s'", artist, album, title
             )
-            return (artist, album, title)
+            return (artist, album, station_name, title)
     return None
 
 
@@ -96,7 +95,7 @@ def control_play(config: dict, action: PlayAction) -> bool:
 def change_volume(config: dict, increment: int) -> bool:
     for zone in get_enabled_zone_names(config):
         url_vol_increment: str = f"+{increment}" if increment > 0 else str(increment)
-        url = f"""{config['endpoint']}{zone}/volume/{url_vol_increment}"""
+        url = f"""{config['endpoint']}/{zone}/volume/{url_vol_increment}"""
         logger.info(
             "Volume in zone: '%s' changing by %d.  Url is '%s'", zone, increment, url
         )

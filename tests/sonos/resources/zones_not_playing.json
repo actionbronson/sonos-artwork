@@ -1,0 +1,436 @@
+[
+    {
+        "uuid": "RINCON_B8E93772554401400",
+        "coordinator": {
+            "uuid": "RINCON_B8E93772554401400",
+            "state": {
+                "volume": 8,
+                "mute": false,
+                "equalizer": {
+                    "bass": 0,
+                    "treble": 0,
+                    "loudness": false,
+                    "speechEnhancement": false,
+                    "nightMode": false
+                },
+                "currentTrack": {
+                    "artist": "",
+                    "title": "",
+                    "album": "",
+                    "albumArtUri": "",
+                    "duration": 0,
+                    "uri": "",
+                    "trackUri": "",
+                    "type": "track",
+                    "stationName": ""
+                },
+                "nextTrack": {
+                    "artist": "",
+                    "title": "",
+                    "album": "",
+                    "albumArtUri": "",
+                    "duration": 0,
+                    "uri": ""
+                },
+                "trackNo": 0,
+                "elapsedTime": 0,
+                "elapsedTimeFormatted": "00:00:00",
+                "playbackState": "STOPPED",
+                "playMode": {
+                    "repeat": "none",
+                    "shuffle": false,
+                    "crossfade": false
+                }
+            },
+            "roomName": "Living Room TV",
+            "coordinator": "RINCON_B8E93772554401400",
+            "groupState": {
+                "volume": 8,
+                "mute": false
+            }
+        },
+        "members": [
+            {
+                "uuid": "RINCON_B8E93772554401400",
+                "state": {
+                    "volume": 8,
+                    "mute": false,
+                    "equalizer": {
+                        "bass": 0,
+                        "treble": 0,
+                        "loudness": false,
+                        "speechEnhancement": false,
+                        "nightMode": false
+                    },
+                    "currentTrack": {
+                        "artist": "",
+                        "title": "",
+                        "album": "",
+                        "albumArtUri": "",
+                        "duration": 0,
+                        "uri": "",
+                        "trackUri": "",
+                        "type": "track",
+                        "stationName": ""
+                    },
+                    "nextTrack": {
+                        "artist": "",
+                        "title": "",
+                        "album": "",
+                        "albumArtUri": "",
+                        "duration": 0,
+                        "uri": ""
+                    },
+                    "trackNo": 0,
+                    "elapsedTime": 0,
+                    "elapsedTimeFormatted": "00:00:00",
+                    "playbackState": "STOPPED",
+                    "playMode": {
+                        "repeat": "none",
+                        "shuffle": false,
+                        "crossfade": false
+                    }
+                },
+                "roomName": "Living Room TV",
+                "coordinator": "RINCON_B8E93772554401400",
+                "groupState": {
+                    "volume": 8,
+                    "mute": false
+                }
+            }
+        ]
+    },
+    {
+        "uuid": "RINCON_B8E93755B6EE01400",
+        "coordinator": {
+            "uuid": "RINCON_B8E93755B6EE01400",
+            "state": {
+                "volume": 15,
+                "mute": false,
+                "equalizer": {
+                    "bass": 0,
+                    "treble": 0,
+                    "loudness": true
+                },
+                "currentTrack": {
+                    "artist": "",
+                    "title": "",
+                    "album": "",
+                    "albumArtUri": "",
+                    "duration": 0,
+                    "uri": "x-sonosapi-radio:sonos%3a153258?sid=303&flags=0&sn=2",
+                    "trackUri": "",
+                    "type": "radio",
+                    "stationName": "New Year's Eve"
+                },
+                "nextTrack": {
+                    "artist": "",
+                    "title": "",
+                    "album": "",
+                    "albumArtUri": "",
+                    "duration": 0,
+                    "uri": ""
+                },
+                "trackNo": 0,
+                "elapsedTime": 0,
+                "elapsedTimeFormatted": "00:00:00",
+                "playbackState": "STOPPED",
+                "playMode": {
+                    "repeat": "none",
+                    "shuffle": false,
+                    "crossfade": false
+                }
+            },
+            "roomName": "Bedroom",
+            "coordinator": "RINCON_B8E93755B6EE01400",
+            "groupState": {
+                "volume": 9,
+                "mute": false
+            }
+        },
+        "members": [
+            {
+                "uuid": "RINCON_B8E9379E1B2801400",
+                "state": {
+                    "volume": 7,
+                    "mute": false,
+                    "equalizer": {
+                        "bass": 0,
+                        "treble": 0,
+                        "loudness": true
+                    },
+                    "currentTrack": {
+                        "artist": "",
+                        "title": "",
+                        "album": "",
+                        "albumArtUri": "",
+                        "duration": 0,
+                        "uri": "x-sonosapi-radio:sonos%3a153258?sid=303&flags=0&sn=2",
+                        "trackUri": "",
+                        "type": "radio",
+                        "stationName": "New Year's Eve"
+                    },
+                    "nextTrack": {
+                        "artist": "",
+                        "title": "",
+                        "album": "",
+                        "albumArtUri": "",
+                        "duration": 0,
+                        "uri": ""
+                    },
+                    "trackNo": 0,
+                    "elapsedTime": 0,
+                    "elapsedTimeFormatted": "00:00:00",
+                    "playbackState": "STOPPED",
+                    "playMode": {
+                        "repeat": "none",
+                        "shuffle": false,
+                        "crossfade": false
+                    }
+                },
+                "roomName": "Bathroom",
+                "coordinator": "RINCON_B8E93755B6EE01400",
+                "groupState": {
+                    "volume": 0,
+                    "mute": false
+                }
+            },
+            {
+                "uuid": "RINCON_B8E93755B6EE01400",
+                "state": {
+                    "volume": 15,
+                    "mute": false,
+                    "equalizer": {
+                        "bass": 0,
+                        "treble": 0,
+                        "loudness": true
+                    },
+                    "currentTrack": {
+                        "artist": "",
+                        "title": "",
+                        "album": "",
+                        "albumArtUri": "",
+                        "duration": 0,
+                        "uri": "x-sonosapi-radio:sonos%3a153258?sid=303&flags=0&sn=2",
+                        "trackUri": "",
+                        "type": "radio",
+                        "stationName": "New Year's Eve"
+                    },
+                    "nextTrack": {
+                        "artist": "",
+                        "title": "",
+                        "album": "",
+                        "albumArtUri": "",
+                        "duration": 0,
+                        "uri": ""
+                    },
+                    "trackNo": 0,
+                    "elapsedTime": 0,
+                    "elapsedTimeFormatted": "00:00:00",
+                    "playbackState": "STOPPED",
+                    "playMode": {
+                        "repeat": "none",
+                        "shuffle": false,
+                        "crossfade": false
+                    }
+                },
+                "roomName": "Bedroom",
+                "coordinator": "RINCON_B8E93755B6EE01400",
+                "groupState": {
+                    "volume": 9,
+                    "mute": false
+                }
+            },
+            {
+                "uuid": "RINCON_949F3E2214F801400",
+                "state": {
+                    "volume": 100,
+                    "mute": false,
+                    "equalizer": {
+                        "bass": 0,
+                        "treble": 0,
+                        "loudness": false
+                    },
+                    "currentTrack": {
+                        "artist": "",
+                        "title": "",
+                        "album": "",
+                        "albumArtUri": "",
+                        "duration": 0,
+                        "uri": "x-sonosapi-radio:sonos%3a153258?sid=303&flags=0&sn=2",
+                        "trackUri": "",
+                        "type": "radio",
+                        "stationName": "New Year's Eve"
+                    },
+                    "nextTrack": {
+                        "artist": "",
+                        "title": "",
+                        "album": "",
+                        "albumArtUri": "",
+                        "duration": 0,
+                        "uri": ""
+                    },
+                    "trackNo": 0,
+                    "elapsedTime": 0,
+                    "elapsedTimeFormatted": "00:00:00",
+                    "playbackState": "STOPPED",
+                    "playMode": {
+                        "repeat": "none",
+                        "shuffle": false,
+                        "crossfade": false
+                    }
+                },
+                "roomName": "Home Theater",
+                "coordinator": "RINCON_B8E93755B6EE01400",
+                "groupState": {
+                    "volume": 0,
+                    "mute": false
+                }
+            },
+            {
+                "uuid": "RINCON_7828CA03EAA001400",
+                "state": {
+                    "volume": 7,
+                    "mute": false,
+                    "equalizer": {
+                        "bass": 1,
+                        "treble": 0,
+                        "loudness": true
+                    },
+                    "currentTrack": {
+                        "artist": "",
+                        "title": "",
+                        "album": "",
+                        "albumArtUri": "",
+                        "duration": 0,
+                        "uri": "x-sonosapi-radio:sonos%3a153258?sid=303&flags=0&sn=2",
+                        "trackUri": "",
+                        "type": "radio",
+                        "stationName": "New Year's Eve"
+                    },
+                    "nextTrack": {
+                        "artist": "",
+                        "title": "",
+                        "album": "",
+                        "albumArtUri": "",
+                        "duration": 0,
+                        "uri": ""
+                    },
+                    "trackNo": 0,
+                    "elapsedTime": 0,
+                    "elapsedTimeFormatted": "00:00:00",
+                    "playbackState": "STOPPED",
+                    "playMode": {
+                        "repeat": "none",
+                        "shuffle": false,
+                        "crossfade": false
+                    },
+                    "sub": {
+                        "gain": 2,
+                        "crossover": 0,
+                        "polarity": 0,
+                        "enabled": true
+                    }
+                },
+                "roomName": "Living Room",
+                "coordinator": "RINCON_B8E93755B6EE01400",
+                "groupState": {
+                    "volume": 0,
+                    "mute": false
+                }
+            },
+            {
+                "uuid": "RINCON_B8E9379CF45601400",
+                "state": {
+                    "volume": 12,
+                    "mute": false,
+                    "equalizer": {
+                        "bass": 0,
+                        "treble": 0,
+                        "loudness": true
+                    },
+                    "currentTrack": {
+                        "artist": "",
+                        "title": "",
+                        "album": "",
+                        "albumArtUri": "",
+                        "duration": 0,
+                        "uri": "x-sonosapi-radio:sonos%3a153258?sid=303&flags=0&sn=2",
+                        "trackUri": "",
+                        "type": "radio",
+                        "stationName": "New Year's Eve"
+                    },
+                    "nextTrack": {
+                        "artist": "",
+                        "title": "",
+                        "album": "",
+                        "albumArtUri": "",
+                        "duration": 0,
+                        "uri": ""
+                    },
+                    "trackNo": 0,
+                    "elapsedTime": 0,
+                    "elapsedTimeFormatted": "00:00:00",
+                    "playbackState": "STOPPED",
+                    "playMode": {
+                        "repeat": "none",
+                        "shuffle": false,
+                        "crossfade": false
+                    }
+                },
+                "roomName": "Kitchen",
+                "coordinator": "RINCON_B8E93755B6EE01400",
+                "groupState": {
+                    "volume": 0,
+                    "mute": false
+                }
+            },
+            {
+                "uuid": "RINCON_B8E9379CF0BE01400",
+                "state": {
+                    "volume": 12,
+                    "mute": false,
+                    "equalizer": {
+                        "bass": 0,
+                        "treble": 0,
+                        "loudness": true
+                    },
+                    "currentTrack": {
+                        "artist": "",
+                        "title": "",
+                        "album": "",
+                        "albumArtUri": "",
+                        "duration": 0,
+                        "uri": "x-sonosapi-radio:sonos%3a153258?sid=303&flags=0&sn=2",
+                        "trackUri": "",
+                        "type": "radio",
+                        "stationName": "New Year's Eve"
+                    },
+                    "nextTrack": {
+                        "artist": "",
+                        "title": "",
+                        "album": "",
+                        "albumArtUri": "",
+                        "duration": 0,
+                        "uri": ""
+                    },
+                    "trackNo": 0,
+                    "elapsedTime": 0,
+                    "elapsedTimeFormatted": "00:00:00",
+                    "playbackState": "STOPPED",
+                    "playMode": {
+                        "repeat": "none",
+                        "shuffle": false,
+                        "crossfade": false
+                    }
+                },
+                "roomName": "Dining Room",
+                "coordinator": "RINCON_B8E93755B6EE01400",
+                "groupState": {
+                    "volume": 0,
+                    "mute": false
+                }
+            }
+        ]
+    }
+]

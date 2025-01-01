@@ -1,0 +1,457 @@
+[
+    {
+        "uuid": "RINCON_B8E93772554401400",
+        "coordinator": {
+            "uuid": "RINCON_B8E93772554401400",
+            "state": {
+                "volume": 8,
+                "mute": false,
+                "equalizer": {
+                    "bass": 0,
+                    "treble": 0,
+                    "loudness": false,
+                    "speechEnhancement": false,
+                    "nightMode": false
+                },
+                "currentTrack": {
+                    "artist": "",
+                    "title": "",
+                    "album": "",
+                    "albumArtUri": "",
+                    "duration": 0,
+                    "uri": "",
+                    "trackUri": "",
+                    "type": "track",
+                    "stationName": ""
+                },
+                "nextTrack": {
+                    "artist": "",
+                    "title": "",
+                    "album": "",
+                    "albumArtUri": "",
+                    "duration": 0,
+                    "uri": ""
+                },
+                "trackNo": 0,
+                "elapsedTime": 0,
+                "elapsedTimeFormatted": "00:00:00",
+                "playbackState": "STOPPED",
+                "playMode": {
+                    "repeat": "none",
+                    "shuffle": false,
+                    "crossfade": false
+                }
+            },
+            "roomName": "Living Room TV",
+            "coordinator": "RINCON_B8E93772554401400",
+            "groupState": {
+                "volume": 8,
+                "mute": false
+            }
+        },
+        "members": [
+            {
+                "uuid": "RINCON_B8E93772554401400",
+                "state": {
+                    "volume": 8,
+                    "mute": false,
+                    "equalizer": {
+                        "bass": 0,
+                        "treble": 0,
+                        "loudness": false,
+                        "speechEnhancement": false,
+                        "nightMode": false
+                    },
+                    "currentTrack": {
+                        "artist": "",
+                        "title": "",
+                        "album": "",
+                        "albumArtUri": "",
+                        "duration": 0,
+                        "uri": "",
+                        "trackUri": "",
+                        "type": "track",
+                        "stationName": ""
+                    },
+                    "nextTrack": {
+                        "artist": "",
+                        "title": "",
+                        "album": "",
+                        "albumArtUri": "",
+                        "duration": 0,
+                        "uri": ""
+                    },
+                    "trackNo": 0,
+                    "elapsedTime": 0,
+                    "elapsedTimeFormatted": "00:00:00",
+                    "playbackState": "STOPPED",
+                    "playMode": {
+                        "repeat": "none",
+                        "shuffle": false,
+                        "crossfade": false
+                    }
+                },
+                "roomName": "Living Room TV",
+                "coordinator": "RINCON_B8E93772554401400",
+                "groupState": {
+                    "volume": 8,
+                    "mute": false
+                }
+            }
+        ]
+    },
+    {
+        "uuid": "RINCON_B8E93755B6EE01400",
+        "coordinator": {
+            "uuid": "RINCON_B8E93755B6EE01400",
+            "state": {
+                "volume": 15,
+                "mute": false,
+                "equalizer": {
+                    "bass": 0,
+                    "treble": 0,
+                    "loudness": true
+                },
+                "currentTrack": {
+                    "artist": "André 3000",
+                    "title": "Moving Day",
+                    "album": "Moving Day",
+                    "albumArtUri": "/getaa?s=1&u=x-sonos-http%3alibrarytrack%253ai.WJQ4qtmb3rQ.mp4%3fsid%3d204%26flags%3d8232%26sn%3d1",
+                    "duration": 699,
+                    "uri": "x-sonos-http:librarytrack%3ai.WJQ4qtmb3rQ.mp4?sid=204&flags=8232&sn=1",
+                    "trackUri": "x-sonos-http:librarytrack%3ai.WJQ4qtmb3rQ.mp4?sid=204&flags=8232&sn=1",
+                    "type": "track",
+                    "stationName": "",
+                    "absoluteAlbumArtUri": "https://is5-ssl.mzstatic.com/image/thumb/Music221/v4/3d/26/1b/3d261bbb-d8d3-20b4-dabb-1bee11cecb14/196872575026.jpg/1200x1200bb.png"
+                },
+                "nextTrack": {
+                    "artist": "André 3000",
+                    "title": "Day Moving",
+                    "album": "Moving Day",
+                    "albumArtUri": "/getaa?s=1&u=x-sonos-http%3alibrarytrack%253ai.4EeKxh3g9pK.mp4%3fsid%3d204%26flags%3d8232%26sn%3d1",
+                    "duration": 699,
+                    "uri": "x-sonos-http:librarytrack%3ai.4EeKxh3g9pK.mp4?sid=204&flags=8232&sn=1",
+                    "trackUri": "x-sonos-http:librarytrack%3ai.4EeKxh3g9pK.mp4?sid=204&flags=8232&sn=1",
+                    "absoluteAlbumArtUri": "http://192.168.1.158:1400/getaa?s=1&u=x-sonos-http%3alibrarytrack%253ai.4EeKxh3g9pK.mp4%3fsid%3d204%26flags%3d8232%26sn%3d1"
+                },
+                "trackNo": 1,
+                "elapsedTime": 0,
+                "elapsedTimeFormatted": "00:00:00",
+                "playbackState": "PAUSED_PLAYBACK",
+                "playMode": {
+                    "repeat": "none",
+                    "shuffle": false,
+                    "crossfade": false
+                }
+            },
+            "roomName": "Bedroom",
+            "coordinator": "RINCON_B8E93755B6EE01400",
+            "groupState": {
+                "volume": 9,
+                "mute": false
+            }
+        },
+        "members": [
+            {
+                "uuid": "RINCON_B8E9379E1B2801400",
+                "state": {
+                    "volume": 7,
+                    "mute": false,
+                    "equalizer": {
+                        "bass": 0,
+                        "treble": 0,
+                        "loudness": true
+                    },
+                    "currentTrack": {
+                        "artist": "André 3000",
+                        "title": "Moving Day",
+                        "album": "Moving Day",
+                        "albumArtUri": "/getaa?s=1&u=x-sonos-http%3alibrarytrack%253ai.WJQ4qtmb3rQ.mp4%3fsid%3d204%26flags%3d8232%26sn%3d1",
+                        "duration": 699,
+                        "uri": "x-sonos-http:librarytrack%3ai.WJQ4qtmb3rQ.mp4?sid=204&flags=8232&sn=1",
+                        "trackUri": "x-sonos-http:librarytrack%3ai.WJQ4qtmb3rQ.mp4?sid=204&flags=8232&sn=1",
+                        "type": "track",
+                        "stationName": "",
+                        "absoluteAlbumArtUri": "https://is5-ssl.mzstatic.com/image/thumb/Music221/v4/3d/26/1b/3d261bbb-d8d3-20b4-dabb-1bee11cecb14/196872575026.jpg/1200x1200bb.png"
+                    },
+                    "nextTrack": {
+                        "artist": "André 3000",
+                        "title": "Day Moving",
+                        "album": "Moving Day",
+                        "albumArtUri": "/getaa?s=1&u=x-sonos-http%3alibrarytrack%253ai.4EeKxh3g9pK.mp4%3fsid%3d204%26flags%3d8232%26sn%3d1",
+                        "duration": 699,
+                        "uri": "x-sonos-http:librarytrack%3ai.4EeKxh3g9pK.mp4?sid=204&flags=8232&sn=1",
+                        "trackUri": "x-sonos-http:librarytrack%3ai.4EeKxh3g9pK.mp4?sid=204&flags=8232&sn=1",
+                        "absoluteAlbumArtUri": "http://192.168.1.158:1400/getaa?s=1&u=x-sonos-http%3alibrarytrack%253ai.4EeKxh3g9pK.mp4%3fsid%3d204%26flags%3d8232%26sn%3d1"
+                    },
+                    "trackNo": 1,
+                    "elapsedTime": 0,
+                    "elapsedTimeFormatted": "00:00:00",
+                    "playbackState": "PAUSED_PLAYBACK",
+                    "playMode": {
+                        "repeat": "none",
+                        "shuffle": false,
+                        "crossfade": false
+                    }
+                },
+                "roomName": "Bathroom",
+                "coordinator": "RINCON_B8E93755B6EE01400",
+                "groupState": {
+                    "volume": 0,
+                    "mute": false
+                }
+            },
+            {
+                "uuid": "RINCON_B8E93755B6EE01400",
+                "state": {
+                    "volume": 15,
+                    "mute": false,
+                    "equalizer": {
+                        "bass": 0,
+                        "treble": 0,
+                        "loudness": true
+                    },
+                    "currentTrack": {
+                        "artist": "André 3000",
+                        "title": "Moving Day",
+                        "album": "Moving Day",
+                        "albumArtUri": "/getaa?s=1&u=x-sonos-http%3alibrarytrack%253ai.WJQ4qtmb3rQ.mp4%3fsid%3d204%26flags%3d8232%26sn%3d1",
+                        "duration": 699,
+                        "uri": "x-sonos-http:librarytrack%3ai.WJQ4qtmb3rQ.mp4?sid=204&flags=8232&sn=1",
+                        "trackUri": "x-sonos-http:librarytrack%3ai.WJQ4qtmb3rQ.mp4?sid=204&flags=8232&sn=1",
+                        "type": "track",
+                        "stationName": "",
+                        "absoluteAlbumArtUri": "https://is5-ssl.mzstatic.com/image/thumb/Music221/v4/3d/26/1b/3d261bbb-d8d3-20b4-dabb-1bee11cecb14/196872575026.jpg/1200x1200bb.png"
+                    },
+                    "nextTrack": {
+                        "artist": "André 3000",
+                        "title": "Day Moving",
+                        "album": "Moving Day",
+                        "albumArtUri": "/getaa?s=1&u=x-sonos-http%3alibrarytrack%253ai.4EeKxh3g9pK.mp4%3fsid%3d204%26flags%3d8232%26sn%3d1",
+                        "duration": 699,
+                        "uri": "x-sonos-http:librarytrack%3ai.4EeKxh3g9pK.mp4?sid=204&flags=8232&sn=1",
+                        "trackUri": "x-sonos-http:librarytrack%3ai.4EeKxh3g9pK.mp4?sid=204&flags=8232&sn=1",
+                        "absoluteAlbumArtUri": "http://192.168.1.158:1400/getaa?s=1&u=x-sonos-http%3alibrarytrack%253ai.4EeKxh3g9pK.mp4%3fsid%3d204%26flags%3d8232%26sn%3d1"
+                    },
+                    "trackNo": 1,
+                    "elapsedTime": 0,
+                    "elapsedTimeFormatted": "00:00:00",
+                    "playbackState": "PAUSED_PLAYBACK",
+                    "playMode": {
+                        "repeat": "none",
+                        "shuffle": false,
+                        "crossfade": false
+                    }
+                },
+                "roomName": "Bedroom",
+                "coordinator": "RINCON_B8E93755B6EE01400",
+                "groupState": {
+                    "volume": 9,
+                    "mute": false
+                }
+            },
+            {
+                "uuid": "RINCON_949F3E2214F801400",
+                "state": {
+                    "volume": 100,
+                    "mute": false,
+                    "equalizer": {
+                        "bass": 0,
+                        "treble": 0,
+                        "loudness": false
+                    },
+                    "currentTrack": {
+                        "artist": "André 3000",
+                        "title": "Moving Day",
+                        "album": "Moving Day",
+                        "albumArtUri": "/getaa?s=1&u=x-sonos-http%3alibrarytrack%253ai.WJQ4qtmb3rQ.mp4%3fsid%3d204%26flags%3d8232%26sn%3d1",
+                        "duration": 699,
+                        "uri": "x-sonos-http:librarytrack%3ai.WJQ4qtmb3rQ.mp4?sid=204&flags=8232&sn=1",
+                        "trackUri": "x-sonos-http:librarytrack%3ai.WJQ4qtmb3rQ.mp4?sid=204&flags=8232&sn=1",
+                        "type": "track",
+                        "stationName": "",
+                        "absoluteAlbumArtUri": "https://is5-ssl.mzstatic.com/image/thumb/Music221/v4/3d/26/1b/3d261bbb-d8d3-20b4-dabb-1bee11cecb14/196872575026.jpg/1200x1200bb.png"
+                    },
+                    "nextTrack": {
+                        "artist": "André 3000",
+                        "title": "Day Moving",
+                        "album": "Moving Day",
+                        "albumArtUri": "/getaa?s=1&u=x-sonos-http%3alibrarytrack%253ai.4EeKxh3g9pK.mp4%3fsid%3d204%26flags%3d8232%26sn%3d1",
+                        "duration": 699,
+                        "uri": "x-sonos-http:librarytrack%3ai.4EeKxh3g9pK.mp4?sid=204&flags=8232&sn=1",
+                        "trackUri": "x-sonos-http:librarytrack%3ai.4EeKxh3g9pK.mp4?sid=204&flags=8232&sn=1",
+                        "absoluteAlbumArtUri": "http://192.168.1.158:1400/getaa?s=1&u=x-sonos-http%3alibrarytrack%253ai.4EeKxh3g9pK.mp4%3fsid%3d204%26flags%3d8232%26sn%3d1"
+                    },
+                    "trackNo": 1,
+                    "elapsedTime": 0,
+                    "elapsedTimeFormatted": "00:00:00",
+                    "playbackState": "PAUSED_PLAYBACK",
+                    "playMode": {
+                        "repeat": "none",
+                        "shuffle": false,
+                        "crossfade": false
+                    }
+                },
+                "roomName": "Home Theater",
+                "coordinator": "RINCON_B8E93755B6EE01400",
+                "groupState": {
+                    "volume": 0,
+                    "mute": false
+                }
+            },
+            {
+                "uuid": "RINCON_7828CA03EAA001400",
+                "state": {
+                    "volume": 7,
+                    "mute": false,
+                    "equalizer": {
+                        "bass": 1,
+                        "treble": 0,
+                        "loudness": true
+                    },
+                    "currentTrack": {
+                        "artist": "André 3000",
+                        "title": "Moving Day",
+                        "album": "Moving Day",
+                        "albumArtUri": "/getaa?s=1&u=x-sonos-http%3alibrarytrack%253ai.WJQ4qtmb3rQ.mp4%3fsid%3d204%26flags%3d8232%26sn%3d1",
+                        "duration": 699,
+                        "uri": "x-sonos-http:librarytrack%3ai.WJQ4qtmb3rQ.mp4?sid=204&flags=8232&sn=1",
+                        "trackUri": "x-sonos-http:librarytrack%3ai.WJQ4qtmb3rQ.mp4?sid=204&flags=8232&sn=1",
+                        "type": "track",
+                        "stationName": "",
+                        "absoluteAlbumArtUri": "https://is5-ssl.mzstatic.com/image/thumb/Music221/v4/3d/26/1b/3d261bbb-d8d3-20b4-dabb-1bee11cecb14/196872575026.jpg/1200x1200bb.png"
+                    },
+                    "nextTrack": {
+                        "artist": "André 3000",
+                        "title": "Day Moving",
+                        "album": "Moving Day",
+                        "albumArtUri": "/getaa?s=1&u=x-sonos-http%3alibrarytrack%253ai.4EeKxh3g9pK.mp4%3fsid%3d204%26flags%3d8232%26sn%3d1",
+                        "duration": 699,
+                        "uri": "x-sonos-http:librarytrack%3ai.4EeKxh3g9pK.mp4?sid=204&flags=8232&sn=1",
+                        "trackUri": "x-sonos-http:librarytrack%3ai.4EeKxh3g9pK.mp4?sid=204&flags=8232&sn=1",
+                        "absoluteAlbumArtUri": "http://192.168.1.158:1400/getaa?s=1&u=x-sonos-http%3alibrarytrack%253ai.4EeKxh3g9pK.mp4%3fsid%3d204%26flags%3d8232%26sn%3d1"
+                    },
+                    "trackNo": 1,
+                    "elapsedTime": 0,
+                    "elapsedTimeFormatted": "00:00:00",
+                    "playbackState": "PAUSED_PLAYBACK",
+                    "playMode": {
+                        "repeat": "none",
+                        "shuffle": false,
+                        "crossfade": false
+                    },
+                    "sub": {
+                        "gain": 2,
+                        "crossover": 0,
+                        "polarity": 0,
+                        "enabled": true
+                    }
+                },
+                "roomName": "Living Room",
+                "coordinator": "RINCON_B8E93755B6EE01400",
+                "groupState": {
+                    "volume": 0,
+                    "mute": false
+                }
+            },
+            {
+                "uuid": "RINCON_B8E9379CF45601400",
+                "state": {
+                    "volume": 12,
+                    "mute": false,
+                    "equalizer": {
+                        "bass": 0,
+                        "treble": 0,
+                        "loudness": true
+                    },
+                    "currentTrack": {
+                        "artist": "André 3000",
+                        "title": "Moving Day",
+                        "album": "Moving Day",
+                        "albumArtUri": "/getaa?s=1&u=x-sonos-http%3alibrarytrack%253ai.WJQ4qtmb3rQ.mp4%3fsid%3d204%26flags%3d8232%26sn%3d1",
+                        "duration": 699,
+                        "uri": "x-sonos-http:librarytrack%3ai.WJQ4qtmb3rQ.mp4?sid=204&flags=8232&sn=1",
+                        "trackUri": "x-sonos-http:librarytrack%3ai.WJQ4qtmb3rQ.mp4?sid=204&flags=8232&sn=1",
+                        "type": "track",
+                        "stationName": "",
+                        "absoluteAlbumArtUri": "https://is5-ssl.mzstatic.com/image/thumb/Music221/v4/3d/26/1b/3d261bbb-d8d3-20b4-dabb-1bee11cecb14/196872575026.jpg/1200x1200bb.png"
+                    },
+                    "nextTrack": {
+                        "artist": "André 3000",
+                        "title": "Day Moving",
+                        "album": "Moving Day",
+                        "albumArtUri": "/getaa?s=1&u=x-sonos-http%3alibrarytrack%253ai.4EeKxh3g9pK.mp4%3fsid%3d204%26flags%3d8232%26sn%3d1",
+                        "duration": 699,
+                        "uri": "x-sonos-http:librarytrack%3ai.4EeKxh3g9pK.mp4?sid=204&flags=8232&sn=1",
+                        "trackUri": "x-sonos-http:librarytrack%3ai.4EeKxh3g9pK.mp4?sid=204&flags=8232&sn=1",
+                        "absoluteAlbumArtUri": "http://192.168.1.158:1400/getaa?s=1&u=x-sonos-http%3alibrarytrack%253ai.4EeKxh3g9pK.mp4%3fsid%3d204%26flags%3d8232%26sn%3d1"
+                    },
+                    "trackNo": 1,
+                    "elapsedTime": 0,
+                    "elapsedTimeFormatted": "00:00:00",
+                    "playbackState": "PAUSED_PLAYBACK",
+                    "playMode": {
+                        "repeat": "none",
+                        "shuffle": false,
+                        "crossfade": false
+                    }
+                },
+                "roomName": "Kitchen",
+                "coordinator": "RINCON_B8E93755B6EE01400",
+                "groupState": {
+                    "volume": 0,
+                    "mute": false
+                }
+            },
+            {
+                "uuid": "RINCON_B8E9379CF0BE01400",
+                "state": {
+                    "volume": 12,
+                    "mute": false,
+                    "equalizer": {
+                        "bass": 0,
+                        "treble": 0,
+                        "loudness": true
+                    },
+                    "currentTrack": {
+                        "artist": "André 3000",
+                        "title": "Moving Day",
+                        "album": "Moving Day",
+                        "albumArtUri": "/getaa?s=1&u=x-sonos-http%3alibrarytrack%253ai.WJQ4qtmb3rQ.mp4%3fsid%3d204%26flags%3d8232%26sn%3d1",
+                        "duration": 699,
+                        "uri": "x-sonos-http:librarytrack%3ai.WJQ4qtmb3rQ.mp4?sid=204&flags=8232&sn=1",
+                        "trackUri": "x-sonos-http:librarytrack%3ai.WJQ4qtmb3rQ.mp4?sid=204&flags=8232&sn=1",
+                        "type": "track",
+                        "stationName": "",
+                        "absoluteAlbumArtUri": "https://is5-ssl.mzstatic.com/image/thumb/Music221/v4/3d/26/1b/3d261bbb-d8d3-20b4-dabb-1bee11cecb14/196872575026.jpg/1200x1200bb.png"
+                    },
+                    "nextTrack": {
+                        "artist": "André 3000",
+                        "title": "Day Moving",
+                        "album": "Moving Day",
+                        "albumArtUri": "/getaa?s=1&u=x-sonos-http%3alibrarytrack%253ai.4EeKxh3g9pK.mp4%3fsid%3d204%26flags%3d8232%26sn%3d1",
+                        "duration": 699,
+                        "uri": "x-sonos-http:librarytrack%3ai.4EeKxh3g9pK.mp4?sid=204&flags=8232&sn=1",
+                        "trackUri": "x-sonos-http:librarytrack%3ai.4EeKxh3g9pK.mp4?sid=204&flags=8232&sn=1",
+                        "absoluteAlbumArtUri": "http://192.168.1.158:1400/getaa?s=1&u=x-sonos-http%3alibrarytrack%253ai.4EeKxh3g9pK.mp4%3fsid%3d204%26flags%3d8232%26sn%3d1"
+                    },
+                    "trackNo": 1,
+                    "elapsedTime": 0,
+                    "elapsedTimeFormatted": "00:00:00",
+                    "playbackState": "PAUSED_PLAYBACK",
+                    "playMode": {
+                        "repeat": "none",
+                        "shuffle": false,
+                        "crossfade": false
+                    }
+                },
+                "roomName": "Dining Room",
+                "coordinator": "RINCON_B8E93755B6EE01400",
+                "groupState": {
+                    "volume": 0,
+                    "mute": false
+                }
+            }
+        ]
+    }
+]

@@ -1,5 +1,5 @@
 # You need a running backend of the Sonos HTTP API, such as https://github.com/jishi/node-sonos-http-api
-endpoint: http://jupiter:5005/
+endpoint: http://jupiter:5005
 
 # HyperPixel 4.0 Square 
 display:
