@@ -18,7 +18,7 @@ requirements = [
 
 setup(
     name="sonos-artwork",
-    version="1.2.1",
+    version="1.2.2",
     description="Displays Sonos Artwork playing in a zone.  "
     "Allows for basic playback controls.",
     long_description=long_description,
@@ -43,7 +43,7 @@ setup(
     python_requires=">=3.10, <4",
     install_requires=requirements,
     extras_require={
-        "dev": ["pytest", "black", "ruff", "twine"],
+        "dev": ["pytest", "black", "ruff", "twine", "pytest-pretty"],
     },
     include_package_data=True,
     entry_points={

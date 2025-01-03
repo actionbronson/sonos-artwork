@@ -74,7 +74,7 @@ def guess_artwork(config: dict, current_track: dict) -> str | None:
 def whats_playing(config: dict) -> dict:
     zones = [z["name"] for z in config["zones"]]
     if zones:
-        details = get_zone_details(zones)
+        details = get_zone_details(config, zones)
         if details:
             state = details[zones[0]]["state"]
             if "currentTrack" in state:
@@ -145,8 +145,12 @@ def build_current_track(config: dict) -> flt.Row:
     )
 
     def pretty_print(play_tuple: tuple) -> str:
-        artist, album, title = play_tuple
-        return f"""{artist} - {album}\n{title}"""
+        artist, album, station_name, title = play_tuple
+        return (
+            f"""Artist: {artist}\n"""
+            f"""{f"Station Name: {station_name}" if station_name else f"Album: {album}"}\n"""  # noqa: E501
+            f"""Title: {title}"""
+        )
 
     def on_click(e: flt.TapEvent) -> None:
         text.value = pretty_print(get_status_info(config))
@@ -226,6 +230,7 @@ def flet_app_updater(config_file: str | None = None) -> Callable[..., None]:
 
         def refresh() -> flt.Container:
             track = whats_playing(config)
+            logger.info("Got track: '%s'", track)
             artwork = guess_artwork(config, track)
             if page.controls:
                 for control in page.controls:
