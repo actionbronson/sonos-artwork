@@ -1,5 +1,4 @@
 FROM python:3.13
-ENV TARGETS=titan:24001
 
 WORKDIR /app
 
