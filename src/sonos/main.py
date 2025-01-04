@@ -6,11 +6,11 @@ from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from collections.abc import Callable
 
+import threading
 import time
 from urllib.parse import parse_qs, urlparse
 
 import flet as flt
-from flet_timer.flet_timer import Timer
 from typer import Typer
 
 from sonos.utils import (
@@ -22,6 +22,7 @@ from sonos.utils import (
     get_zone_details,
     load_config,
 )
+from sonos.webserver import run_flask_app
 
 logger = logging.getLogger(__name__)
 
@@ -141,6 +142,7 @@ def build_current_track(config: dict) -> flt.Row:
         text_align=flt.TextAlign.CENTER,
         font_family="Kanit",
         color=flt.Colors.WHITE,
+        bgcolor=flt.Colors.BLACK,
         expand=True,
     )
 
@@ -153,10 +155,12 @@ def build_current_track(config: dict) -> flt.Row:
         )
 
     def on_click(e: flt.TapEvent) -> None:
+        e.control.bgcolor = flt.Colors.BLACK
         text.value = pretty_print(get_status_info(config))
         e.control.update()
         time.sleep(3)
         text.value = None
+        e.control.bgcolor = flt.Colors.TRANSPARENT
         e.control.update()
 
     return flt.Row(
@@ -216,9 +220,7 @@ def build_volume_control_row(config: dict) -> flt.Row:
     )
 
 
-def flet_app_updater(config_file: str | None = None) -> Callable[..., None]:
-    config = load_config(config_file)
-
+def flet_app_updater(config: dict, event: threading.Event) -> Callable[..., None]:
     def update_sonos_app(page: flt.Page) -> None:
         page.window.height = config["display"]["height"]
         page.window.width = config["display"]["width"]
@@ -261,12 +263,20 @@ def flet_app_updater(config_file: str | None = None) -> Callable[..., None]:
 
         page.horizontal_alignment = flt.CrossAxisAlignment.CENTER
         page.vertical_alignment = flt.MainAxisAlignment.CENTER
-        page.add(Timer(name="timer", interval_s=2, callback=refresh))
+        refresh()
         page.update()
+
+        while True:
+            if event.wait(timeout=10.0):
+                event.clear()
+            refresh()
 
     return update_sonos_app
 
 
 @app.command()
 def run(config_file: str | None = None) -> None:
-    flt.app(target=flet_app_updater(config_file))
+    config = load_config(config_file)
+    event = threading.Event()
+    threading.Thread(target=lambda: run_flask_app(config, event), daemon=True).start()
+    flt.app(target=flet_app_updater(config, event))

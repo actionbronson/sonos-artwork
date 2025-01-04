@@ -6,6 +6,10 @@ display:
   height: 720
   width: 720
 
+webhook:
+  registrar: http://jupiter:27005/register
+  port: 43210
+
 # Sonos Zones we're controlling
 zones:
   - name: Kitchen

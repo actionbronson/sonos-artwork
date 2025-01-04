@@ -69,8 +69,3 @@ def test_get_zone_details(_):
     config = load_config()
     details = get_zone_details(config, ['Kitchen'])
     assert len(details.keys()) == 1
-
-@mock.patch(
-    'sonos.utils.requests.get',
-    side_effect=gen_mocked_req(f"{config['endpoint']}/zones", "zones_all_playing.json"),
-)

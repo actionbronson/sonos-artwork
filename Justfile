@@ -19,6 +19,10 @@ format:
 check:
     ruff check src/
 
+webhook-docker:
+    cd src/webhook-forwarder
+    docker build -f ./Containerfile -t sonos-webhook-forwarder --platform linux/amd64 .
+
 # Clean up generated files
 clean:
     rm -rf **/__pycache__ .pytest_cache dist build
