@@ -12,13 +12,12 @@ requirements = [
     'requests==2.32.3',
     'flet==0.25.2',
     'pyaml==24.12.1',
-    'flet-timer==0.0.13',
     'typer==0.15.1',
 ]
 
 setup(
     name="sonos-artwork",
-    version="1.2.2",
+    version="1.3.0",
     description="Displays Sonos Artwork playing in a zone.  "
     "Allows for basic playback controls.",
     long_description=long_description,
