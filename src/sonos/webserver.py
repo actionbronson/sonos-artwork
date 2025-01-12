@@ -25,17 +25,20 @@ def run_flask_app(config: dict, event: threading.Event):
         return jsonify(isError=False, message="Success", statusCode=200), 200
 
     ip_address = socket.gethostbyname(socket.gethostname())
-    resp = requests.post(
-        registrar,
-        json={'host': ip_address, 'port': port},
-        headers={'content-type': 'application/json'},
-        timeout=10,
-    )
-    resp.raise_for_status()
-    logger.info(
-        "Registered %s:%d with registrar: %s.  Now starting Flask server.",
-        ip_address,
-        port,
-        registrar,
-    )
+    try:
+        resp = requests.post(
+            registrar,
+            json={'host': ip_address, 'port': port},
+            headers={'content-type': 'application/json'},
+            timeout=10,
+        )
+        resp.raise_for_status()
+        logger.info(
+            "Registered %s:%d with registrar: %s.  Now starting Flask server.",
+            ip_address,
+            port,
+            registrar,
+        )
+    except Exception:
+        logger.exception("Could not register with the registrar.")
     flask_app.run(host=ip_address, port=port, use_reloader=False)

@@ -51,15 +51,19 @@ def get_zone_details(config: dict, zones: list[str] | None = None) -> dict[str, 
         return True if not zones else zone in zones
 
     url = f"{config['endpoint']}/zones"
-    resp = requests.get(url, timeout=10)
-    resp.raise_for_status()
-    zones_json = resp.json()
-    return {
-        zone["roomName"]: zone
-        for zone_json in zones_json
-        for zone in zone_json["members"]
-        if is_wanted_zone(zone["roomName"])
-    }
+    try:
+        resp = requests.get(url, timeout=10)
+        resp.raise_for_status()
+        zones_json = resp.json()
+        return {
+            zone["roomName"]: zone
+            for zone_json in zones_json
+            for zone in zone_json["members"]
+            if is_wanted_zone(zone["roomName"])
+        }
+    except Exception:
+        logger.exception("Caught an http exception trying to get zone details.")
+        return {}
 
 
 def get_status_info(config: dict) -> tuple:
@@ -83,11 +87,15 @@ def control_play(config: dict, action: PlayAction) -> bool:
     for zone in get_enabled_zone_names(config):
         url = f"""{config['endpoint']}/{zone}/{action.value}"""
         logger.info("Issuing a play control: '%s'.  Url is '%s'", action.name, url)
-        resp = requests.get(url, timeout=10)
-        resp.raise_for_status()
-        resp_json = resp.json()
-        if resp_json['status'] != 'success':
-            logger.error("Response was not a success.  Received: %s", resp_json)
+        try:
+            resp = requests.get(url, timeout=10)
+            resp.raise_for_status()
+            resp_json = resp.json()
+            if resp_json['status'] != 'success':
+                logger.error("Response was not a success.  Received: %s", resp_json)
+                return False
+        except Exception:
+            logger.exception("Caught an error trying to control play")
             return False
     return True
 
@@ -99,11 +107,15 @@ def change_volume(config: dict, increment: int) -> bool:
         logger.info(
             "Volume in zone: '%s' changing by %d.  Url is '%s'", zone, increment, url
         )
-        resp = requests.get(url, timeout=10)
-        resp.raise_for_status()
-        resp_json = resp.json()
-        if resp_json['status'] != 'success':
-            logger.error("Response was not a success.  Received: %s", resp_json)
+        try:
+            resp = requests.get(url, timeout=10)
+            resp.raise_for_status()
+            resp_json = resp.json()
+            if resp_json['status'] != 'success':
+                logger.error("Response was not a success.  Received: %s", resp_json)
+                return False
+        except Exception:
+            logger.exception("Caught an exception trying to change volume.")
             return False
     return True
 
